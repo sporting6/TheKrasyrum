@@ -1,5 +1,11 @@
 package com.dargonboi.krasyrum;
 
+import com.dargonboi.krasyrum.block.ModBlocks;
+import com.dargonboi.krasyrum.block.ModOres;
+import com.dargonboi.krasyrum.item.ModBlockItem;
+import com.dargonboi.krasyrum.item.ModIngots;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,11 +22,14 @@ public class Krasyrum {
     public static final String MOD_ID = "krasyrum";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    // Very Important Comment
     public Krasyrum() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModIngots.Register(modEventBus);
+        ModBlockItem.Register(modEventBus);
 
+        ModBlocks.Register(modEventBus);
+        ModOres.Register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -34,6 +43,8 @@ public class Krasyrum {
 
     }
 
+
+
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents {
@@ -41,5 +52,7 @@ public class Krasyrum {
         public static void onClientSetup(FMLClientSetupEvent event) {
 
         }
+
+
     }
 }
