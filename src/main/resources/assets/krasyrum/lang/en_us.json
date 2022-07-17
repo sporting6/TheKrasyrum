@@ -57,6 +57,11 @@
   "item.krasyrum.red_nanitarium_apple": "Nanitarium Apple",
   "item.krasyrum.hastey_apple": "Hastey Apple",
 
+  "block.krasyrum.pineapple_crop": "Pineapple Plant",
+  "item.krasyrum.pineapple_seeds": "Pineapple Seeds",
+  "item.krasyrum.pineapple": "Pineapple",
+  "item.krasyrum.pineapple_slice": "Pineapple Slice",
+
 
   "block.krasyrum.blue_nanitarium_ore": "Deepslate Blue Nanitarium Ore",
   "block.krasyrum.blue_nanitarium_block": "Blue Nanitarium Block",
@@ -162,7 +167,8 @@
 
 
   "itemGroup.krasyrum_materials": "Krasyrum Materials",
-  "itemGroup.krasyrum_tools_armor": "Krasyrum Materials",
+  "itemGroup.krasyrum_tools_armor": "Krasyrum Tools And Armor",
+  "itemGroup.krasyrum_foods": "Krasyrum Foods",
   "itemGroup.krasyrum_chests": "Krasyrum Storage"
 
 

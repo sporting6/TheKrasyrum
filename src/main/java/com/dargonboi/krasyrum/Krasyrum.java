@@ -1,20 +1,23 @@
 package com.dargonboi.krasyrum;
 
+import org.slf4j.Logger;
+
 import com.dargonboi.krasyrum.block.ModBlocks;
 import com.dargonboi.krasyrum.block.ModOres;
 import com.dargonboi.krasyrum.item.ModBlockItem;
+import com.dargonboi.krasyrum.item.ModFoods;
 import com.dargonboi.krasyrum.item.ModIngots;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.common.MinecraftForge;
 import com.mojang.logging.LogUtils;
+
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Krasyrum.MOD_ID)
@@ -27,6 +30,8 @@ public class Krasyrum {
 
         ModIngots.Register(modEventBus);
         ModBlockItem.Register(modEventBus);
+
+        ModFoods.Register(modEventBus);
 
         ModBlocks.Register(modEventBus);
         ModOres.Register(modEventBus);
@@ -50,6 +55,8 @@ public class Krasyrum {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(ModFoods.PINEAPPLE_CROP.get(), RenderType.cutout());
+
 
         }
 

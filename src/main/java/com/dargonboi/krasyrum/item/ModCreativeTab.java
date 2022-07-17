@@ -13,6 +13,15 @@ public class ModCreativeTab {
         }
 
     };
+    
+    public static final CreativeModeTab KRASYRUM_FOODS = new CreativeModeTab("krasyrum_foods") {
+
+        @Override
+        public ItemStack makeIcon(){
+            return new ItemStack(ModFoods.PINEAPPLE.get());
+        }
+
+    };
 
 
 }
