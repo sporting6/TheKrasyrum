@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "krasyrum:veranium_ore",
+        "krasyrum:therium_ore",
+        "krasyrum:blue_nanitarium_ore",
+        "krasyrum:red_nanitarium_ore"
+
+    ]
+}

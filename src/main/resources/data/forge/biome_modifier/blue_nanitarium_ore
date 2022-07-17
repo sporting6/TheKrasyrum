@@ -1,0 +1,5 @@
+{
+  "type": "krasyrum:ores",
+  "biomes": "#minecraft:is_overworld",
+  "feature": "krasyrum:blue_nanitarium_ore_placed"
+}

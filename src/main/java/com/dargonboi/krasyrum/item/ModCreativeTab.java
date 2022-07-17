@@ -23,5 +23,14 @@ public class ModCreativeTab {
 
     };
 
+    public static final CreativeModeTab KRASYRUM_TOOLS_ARMOR = new CreativeModeTab("krasyrum_tools_armor") {
+
+        @Override
+        public ItemStack makeIcon(){
+            return new ItemStack(ModTools.KYRANIUM_PICKAXE.get());
+        }
+
+    };
+
 
 }

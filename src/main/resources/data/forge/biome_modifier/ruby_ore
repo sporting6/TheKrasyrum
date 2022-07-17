@@ -1,0 +1,5 @@
+{
+  "type": "krasyrum:ores",
+  "biomes": "#minecraft:is_overworld",
+  "feature": "krasyrum:ruby_ore_placed"
+}

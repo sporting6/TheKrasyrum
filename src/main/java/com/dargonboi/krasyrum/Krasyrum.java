@@ -1,12 +1,10 @@
 package com.dargonboi.krasyrum;
 
+import com.dargonboi.krasyrum.item.*;
 import org.slf4j.Logger;
 
 import com.dargonboi.krasyrum.block.ModBlocks;
 import com.dargonboi.krasyrum.block.ModOres;
-import com.dargonboi.krasyrum.item.ModBlockItem;
-import com.dargonboi.krasyrum.item.ModFoods;
-import com.dargonboi.krasyrum.item.ModIngots;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -30,6 +28,10 @@ public class Krasyrum {
 
         ModIngots.Register(modEventBus);
         ModBlockItem.Register(modEventBus);
+        ModTools.Register(modEventBus);
+        ModArmor.Register(modEventBus);
+
+
 
         ModFoods.Register(modEventBus);
 

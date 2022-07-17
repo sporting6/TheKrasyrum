@@ -41,7 +41,7 @@ public class ModIngots {
             () -> new Item(new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant()
                     .rarity(Rarity.UNCOMMON)));
 
-
+    //Raw Ores
     public static final RegistryObject<Item> RAW_BLUE_NANITARIUM = ITEMS.register("raw_blue_nanitarium", () -> new Item(
             new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant().rarity(Rarity.RARE)));
 
@@ -57,6 +57,20 @@ public class ModIngots {
     public static final RegistryObject<Item> RAW_THERIUM = ITEMS.register("raw_therium", () -> new Item(
             new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant().rarity(Rarity.RARE)));
 
+    //Obsidian
+    public static final RegistryObject<Item> OBSIDIAN_SHARDS = ITEMS.register("obsidian_shards", () -> new Item(
+            new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant().rarity(Rarity.UNCOMMON)));
+
+    public static final RegistryObject<Item> PARTALLY_REFINED_OBSIDIAN = ITEMS.register("partally_refined_obsidian",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant()
+                    .rarity(Rarity.UNCOMMON)));
+
+    public static final RegistryObject<Item> REFINED_OBSIDIAN = ITEMS.register("refined_obsidian", () -> new Item(
+            new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant().rarity(Rarity.UNCOMMON)));
+
+    public static final RegistryObject<Item> REFINED_OBSIDIAN_INGOT = ITEMS.register("refined_obsidian_ingot",
+            () -> new Item(
+                    new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant().rarity(Rarity.RARE)));
 
 
     public static void Register(IEventBus eventBus){

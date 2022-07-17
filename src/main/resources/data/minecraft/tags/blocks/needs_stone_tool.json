@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+
+        "krasyrum:raw_titanium_block",
+        "krasyrum:titanium_block",
+
+
+        "krasyrum:ruby_block",
+
+        "krasyrum:raw_blue_nanitarium_block",
+        "krasyrum:raw_red_nanitarium_block",
+        "krasyrum:kyranium_block",
+        "krasyrum:raw_veranium_block",
+        "krasyrum:red_nanitarium_block",
+        "krasyrum:blue_nanitarium_block",
+        "krasyrum:veranium_block",
+        "krasyrum:nanitarium_chest",
+        "krasyrum:powered_chest"
+
+    ]
+}

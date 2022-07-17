@@ -1,0 +1,5 @@
+{
+  "type": "krasyrum:ores",
+  "biomes": "minecraft:theend",
+  "feature": "krasyrum:veranium_ore_placed"
+}
