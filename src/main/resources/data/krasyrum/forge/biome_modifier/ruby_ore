@@ -1,5 +1,6 @@
 {
-  "type": "krasyrum:ores",
+  "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
   "feature": "krasyrum:ruby_ore_placed"
+  "step": "underground_oress"
 }

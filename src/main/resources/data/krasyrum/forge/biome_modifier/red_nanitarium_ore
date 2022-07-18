@@ -1,5 +1,5 @@
 {
-  "type": "krasyrum:ores",
+  "type": "forge:add_features",
   "biomes": "#minecraft:is_nether",
   "feature": "krasyrum:red_nanitarium_ore_placed"
 }

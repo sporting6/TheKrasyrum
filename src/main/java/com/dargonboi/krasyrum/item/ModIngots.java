@@ -41,6 +41,9 @@ public class ModIngots {
             () -> new Item(new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant()
                     .rarity(Rarity.UNCOMMON)));
 
+    public static final RegistryObject<Item> KYRANIUM_HANDLE = ITEMS.register("kyranium_handle",
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant().rarity(ModRaritys.INSANE)));
+
     //Raw Ores
     public static final RegistryObject<Item> RAW_BLUE_NANITARIUM = ITEMS.register("raw_blue_nanitarium", () -> new Item(
             new Item.Properties().tab(ModCreativeTab.KRASYRUM_MATERIALS).fireResistant().rarity(Rarity.RARE)));

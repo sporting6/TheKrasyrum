@@ -1,6 +1,8 @@
 package com.dargonboi.krasyrum;
 
 import com.dargonboi.krasyrum.item.*;
+import com.dargonboi.krasyrum.world.feature.ModConfiguredFeatures;
+import com.dargonboi.krasyrum.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
 
 import com.dargonboi.krasyrum.block.ModBlocks;
@@ -37,6 +39,9 @@ public class Krasyrum {
 
         ModBlocks.Register(modEventBus);
         ModOres.Register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
